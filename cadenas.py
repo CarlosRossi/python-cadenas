@@ -27,11 +27,11 @@ def donuts(contador):
     
 contador= input ("Ingrese el numero de donas: ")
 if contador >= 10:
-	print "Numero de donas: muchas"
+	contador = "muchas"
 else:
-	print "Numero de donas: " + str(contador)	
+	 str(contador)	
 
-
+return "Numero de donas: " + contador
 
 # B. both_ends
 # Dada una cadena s, devuelva una cadena hecha de los primeros 2
@@ -56,7 +56,12 @@ print valor
 # Ayuda: s.replace(stra, strb) retorna una versión de la cadena s
 # donde todas las instancias de stra han sido reemplazadas por strb.
 
-
+s = raw_input ("Ingrese cadena: ")
+f = len (s)
+r = s[0]
+s= s.replace (s[0],"*")
+valor= r + s[1:f]
+return valor
 
 # D. MixUp
 # Dadas las cadenas a y b, retornar una cadena simple con a y b separados
