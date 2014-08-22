@@ -24,8 +24,13 @@
 # Así donuts(5) devuelve 'Numero de donas: 5'
 # y donuts(23) devuelve 'Numero de donas: muchas'
 def donuts(contador):
-    # +++tu código aquí+++
-    return
+    
+contador= input ("Ingrese el numero de donas: ")
+if contador >= 10:
+	print "Numero de donas: muchas"
+else:
+	print "Numero de donas: " + str(contador)	
+
 
 
 # B. both_ends
@@ -35,8 +40,12 @@ def donuts(contador):
 # es menos de 2, returnar una cadena vacía en su lugar.
 def both_ends(s):
     # +++tu código aquí+++
-    return
-
+   s = raw_input ("Ingrese cadena: ")
+f = len (s)
+r = s[0]
+s= s.replace (s[0],"*")
+valor= r + s[1:f]
+print valor
 
 # C. fix_start
 # Dada una cadena s, devuelva una cadena
@@ -46,9 +55,7 @@ def both_ends(s):
 # Asuma que la cadena es de 1 o más caracteres.
 # Ayuda: s.replace(stra, strb) retorna una versión de la cadena s
 # donde todas las instancias de stra han sido reemplazadas por strb.
-def fix_start(s):
-    # +++tu código aquí+++
-    return
+
 
 
 # D. MixUp
@@ -61,9 +68,15 @@ def fix_start(s):
 # Asumir a y b tienen una longitud de 2 o más.
 def mix_up(a, b):
     # +++tu código aquí+++
-    return
+def fix_start(s):
+    a = raw_input("cadena a:")
+b = raw_input("cadena b:")
+c = a[0]
 
-
+a = b[0]+ a[1:100] 
+b = c[0]+ b[1:100] 
+r = a + " " + b
+    return r
 # Función simple test() utilizada en main() para mostrar
 # lo que retorna cada función vs lo que debería retornar.
 def test(got, expected):
