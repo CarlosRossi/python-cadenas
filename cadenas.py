@@ -29,7 +29,7 @@ contador= input ("Ingrese el numero de donas: ")
 if contador >= 10:
 	contador = "muchas"
 else:
-	 str(contador)	
+	contador= str(contador)	
 
 return "Numero de donas: " + contador
 
@@ -40,12 +40,12 @@ return "Numero de donas: " + contador
 # es menos de 2, returnar una cadena vacía en su lugar.
 def both_ends(s):
     # +++tu código aquí+++
-   s = raw_input ("Ingrese cadena: ")
+s = raw_input ("Ingrese cadena: ")
 f = len (s)
 r = s[0]
 s= s.replace (s[0],"*")
 valor= r + s[1:f]
-print valor
+return valor
 
 # C. fix_start
 # Dada una cadena s, devuelva una cadena
@@ -81,7 +81,7 @@ c = a[0]
 a = b[0]+ a[1:100] 
 b = c[0]+ b[1:100] 
 r = a + " " + b
-    return r
+return r
 # Función simple test() utilizada en main() para mostrar
 # lo que retorna cada función vs lo que debería retornar.
 def test(got, expected):
